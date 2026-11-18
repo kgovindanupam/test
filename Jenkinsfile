@@ -14,6 +14,7 @@ pipeline {
             steps {
                 echo 'Building Python application'
                 bat 'python -m py_compile test.py'
+                bat 'python -m py_compile test_app.py'
             }
         }
 
@@ -27,8 +28,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploying Python application'
-                bat 'python test.py'
+                echo 'Deploying Python web application'
+                bat 'start "Python Web App" /B python test_app.py'
             }
         }
     }

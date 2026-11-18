@@ -13,14 +13,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Python application'
-                bat '"C:\Users\govindanupam\AppData\Local\Python\bin\python.exe" -m py_compile test.py'
+                bat '"C:\\Users\\govindanupam\\AppData\\Local\\Python\\bin\\python.exe" -m py_compile test.py'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Testing Python application'
-                bat '"C:\Users\govindanupam\AppData\Local\Python\bin\python.exe" test.py > output.txt'
+                bat '"C:\\Users\\govindanupam\\AppData\\Local\\Python\\bin\\python.exe" test.py > output.txt'
                 bat 'findstr /C:"444 Y" output.txt'
             }
         }
@@ -28,7 +28,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying Python application'
-                bat '"C:\Users\govindanupam\AppData\Local\Python\bin\python.exe" test.py'
+                bat '"C:\\Users\\govindanupam\\AppData\\Local\\Python\\bin\\python.exe" test.py'
             }
         }
     }

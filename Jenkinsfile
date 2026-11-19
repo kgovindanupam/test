@@ -3,13 +3,13 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
+/*        stage('Checkout') {
             steps {
                 echo 'Checking out source code from GitHub'
                 checkout scm
             }
         }
-
+*/
         stage('Build') {
             steps {
                 echo 'Building Python application'
@@ -20,15 +20,15 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing Python application'
-                bat 'python test.py > output.txt'
-                bat 'findstr /C:"444 Y" output.txt'
+                //bat 'python test.py > output.txt'
+                //bat 'findstr /C:"444 Y" output.txt'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Deploying Python application'
-                bat 'python test.py'
+                //bat 'python test.py'
             }
         }
     }

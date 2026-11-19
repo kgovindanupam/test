@@ -10,7 +10,7 @@ class MyHandler(BaseHTTPRequestHandler):
         html = """
         <html>
             <body>
-                <h1>Welcome !!!</h1>
+                <h1>Welcome hi !!!</h1>
             </body>
         </html>
         """

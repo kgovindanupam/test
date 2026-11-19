@@ -12,3 +12,5 @@ if c :
     print(c,"Y")
 else:
     print("empty")
+
+print("automating trigger")

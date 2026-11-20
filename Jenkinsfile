@@ -3,9 +3,9 @@ pipeline {
 
     parameters{
 	string {
-	 name : 'testing',
-	 defaultvalue : 'testing application',
-	 description : 'Enter app name'
+	 name: 'testing',
+	 defaultValue: 'testing application',
+	 description: 'Enter app name'
 	    }
 	}
 

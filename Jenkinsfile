@@ -1,13 +1,12 @@
-
 pipeline {
     agent any
 
     parameters{
-	string {
+	string (
 	 name: 'testing',
 	 defaultValue: 'testing application',
 	 description: 'Enter app name'
-	    }
+	    )
 	}
 
 
@@ -17,13 +16,12 @@ stages {
 stage('Display InPut'){
 step{
 
-echo '${params.testing}'
+echo '${params.name}'
 
 }}}
 
 }
 
-/*
 
     stages {
 

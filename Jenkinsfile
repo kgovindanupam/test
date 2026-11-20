@@ -20,7 +20,7 @@ echo '${params.name}'
 
 }}}
 
-
+}
 
 /*
     stages {
@@ -35,8 +35,8 @@ echo '${params.name}'
         stage('Build') {
             steps {
                 echo 'Building Python application'
-                /*bat 'python -m py_compile test_app.py'
-                bat 'python -m py_compile test.py'*/
+                //bat 'python -m py_compile test_app.py'
+                //bat 'python -m py_compile test.py'
             }
         }
 
@@ -59,7 +59,9 @@ echo '${params.name}'
         }
     }
 
-*/
+
 
 
 }
+
+*/

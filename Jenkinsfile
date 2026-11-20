@@ -16,7 +16,7 @@ stages {
 stage('Display InPut'){
 steps{
 
-echo '${params.name}'
+echo '${params.testing}'
 
 }}}
 

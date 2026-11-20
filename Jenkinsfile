@@ -14,7 +14,7 @@ pipeline {
 stages {
 
 stage('Display InPut'){
-step{
+steps{
 
 echo '${params.name}'
 

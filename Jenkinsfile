@@ -1,6 +1,27 @@
 pipeline {
     agent any
 
+    parameters {
+        string(
+            name: 'APP_NAME',
+            defaultValue: 'MyApplication',
+            description: 'Enter your application name'
+        )
+    }
+
+    stages {
+        stage('Display Input') {
+            steps {
+                echo "Application Name: ${params.APP_NAME}"
+            }
+        }
+    }
+}
+
+/*
+pipeline {
+    agent any
+
     parameters{
 	string {
 	 name: 'testing',
@@ -20,9 +41,9 @@ echo '${params.name}'
 
 }}}
 
-}
+//}
 
-/*
+
     stages {
 
         stage('Checkout') {

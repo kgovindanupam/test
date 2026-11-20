@@ -1,6 +1,28 @@
 pipeline {
     agent any
 
+    parameters{
+	string {
+	 name : 'testing',
+	 defaultvalue : 'testing application',
+	 description : 'Enter app name'
+	    }
+	}
+
+
+
+stages {
+
+stage('Display InPut'){
+step{
+
+echo '${params.name}'
+
+}}}
+
+
+
+/*
     stages {
 
         stage('Checkout') {
@@ -21,8 +43,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing Python application'
-                /*bat 'python test.py > output.txt'
-                bat 'findstr /C:"444 Y" output.txt'*/
+                bat 'python test.py > output.txt'
+                bat 'findstr /C:"444 Y" output.txt'
             }
         }
 
@@ -36,4 +58,8 @@ pipeline {
             }
         }
     }
+
+*/
+
+
 }

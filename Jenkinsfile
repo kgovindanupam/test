@@ -28,7 +28,6 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploying Python web application'
                 //bat 'start "Python Web App" /B python test_app.py'
                 echo 'Deploying Python application'
                 //bat 'python test.py'

@@ -30,7 +30,7 @@ pipeline {
             steps {
                 //bat 'start "Python Web App" /B python test_app.py'
                 echo 'Deploying Python application'
-                echo 't'
+                //echo 't'
                 //bat 'python test.py'
             }
         }

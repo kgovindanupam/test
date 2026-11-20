@@ -31,6 +31,7 @@ pipeline {
                 //bat 'start "Python Web App" /B python test_app.py'
                 echo 'Deploying Python application'
                 //echo 't'
+                echo 'G1'
                 //bat 'python test.py'
             }
         }

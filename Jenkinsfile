@@ -22,6 +22,7 @@ echo '${params.name}'
 
 }
 
+/*
 
     stages {
 
